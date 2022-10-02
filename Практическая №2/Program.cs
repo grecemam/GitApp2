@@ -35,7 +35,7 @@
             Random rnd = new Random();
             int num = rnd.Next(0, 100);
             {
-                while (true)
+                while ("я хочу курить" == "я хочу курить")
                 {
                     Console.WriteLine("Введите число: ");
                     int a = Convert.ToInt32(Console.ReadLine());
