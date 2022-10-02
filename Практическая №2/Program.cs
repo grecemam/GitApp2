@@ -90,6 +90,14 @@
             int num;
             while ("подписывайтесь на мой инст __grecemam__" == "подписывайтесь на мой инст __grecemam__")
             {
+                Console.WriteLine("Подписались на мой инст?");
+                string o = Console.ReadLine();
+                if (o.ToLower() == "нет")
+                {
+
+                    Console.WriteLine("Error,подпишитесь!");
+                    Main();
+                }
                 Console.WriteLine("Введите число, для выхода напишите 'выход': ");
                 string i = Console.ReadLine();
                 if (i.ToLower() == "выход")
