@@ -88,7 +88,7 @@
         static void ThirdGame()
         {
             int num;
-            while (true)
+            while ("подписывайтесь на мой инст __grecemam__" == "подписывайтесь на мой инст __grecemam__")
             {
                 Console.WriteLine("Введите число, для выхода напишите 'выход': ");
                 string i = Console.ReadLine();
