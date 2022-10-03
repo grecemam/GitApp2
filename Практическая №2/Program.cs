@@ -87,32 +87,39 @@
         }
         static void ThirdGame()
         {
-            int num;
-            while ("подписывайтесь на мой инст __grecemam__" == "подписывайтесь на мой инст __grecemam__")
+            Console.WriteLine("Мой инст: '__grecemam__',подпишитесь");
+            Thread.Sleep(5000);
+            Console.WriteLine("Подписались на мой инст?");
+            string o = Console.ReadLine();
+            if (o.ToLower() == "да")
             {
-                Console.WriteLine("Подписались на мой инст?");
-                string o = Console.ReadLine();
-                if (o.ToLower() == "нет")
+                int num;
+                while ("подписались" == "подписались")
                 {
+                    Console.WriteLine("Введите число, для выхода напишите 'выход': ");
+                    string i = Console.ReadLine();
+                    if (i.ToLower() == "выход")
+                    {
 
-                    Console.WriteLine("Error,подпишитесь!");
-                    Main();
+                        Main();
+                    }
+                    num = Convert.ToInt32(i);
+                    for (int a = 1; a <= num; a++)
+                    {
+                        if (num % a == 0)
+                            Console.Write("{0} ", a);
+                    }
+                    Console.WriteLine();
                 }
-                Console.WriteLine("Введите число, для выхода напишите 'выход': ");
-                string i = Console.ReadLine();
-                if (i.ToLower() == "выход")
-                {
-                  
-                    Main();
-                }
-                num = Convert.ToInt32(i);
-                for (int a = 1; a <= num; a++)
-                {
-                    if (num % a == 0)
-                        Console.Write("{0} ", a);
-                }
-                Console.WriteLine();
+            }
+            else
+            {
+
+                Console.WriteLine("Error,подпишитесь!");
+                Main();
             }
         }
     }
 }
+        
+            
