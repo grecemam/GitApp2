@@ -88,7 +88,7 @@
         static void ThirdGame()
         {
             Console.WriteLine("Мой инст: '__grecemam__','https://instagram.com/__grecemam__?igshid=YmMyMTA2M2Y='подпишитесь");
-            Thread.Sleep(2000);
+            Thread.Sleep(1000);
             Console.WriteLine("Подписались на мой инст?'да|нет'");
             string o = Console.ReadLine();
             if (o.ToLower() == "да")
