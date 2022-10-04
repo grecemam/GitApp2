@@ -10,7 +10,7 @@
             "2. Таблица умножения \n" +
             "3. Вывод детителей числа\n" +
             "4. Выход\n");
-            Console.WriteLine("Выберите игру");
+            Console.WriteLine("Выберите игру, в которую хотели бы сыграть:");
             int g = Convert.ToInt32(Console.ReadLine());
             if (g == 1)
             {
